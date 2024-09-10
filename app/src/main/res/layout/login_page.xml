@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".starts.Login">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@id/tt"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back"/>
+
+        <ImageView
+            android:src="@drawable/images"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/background_edit"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/background_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#03A9F4"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"/>
+
+        <Button
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/background_button"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="20dp"
+            android:onClick="Connect_google"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/google"/>
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect with google"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"/>
+
+        <TextView
+            android:onClick="GoSignUp"
+            android:textColor="#02B0FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign Up"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

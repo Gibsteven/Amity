@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "513836048569",
+    "project_id": "downloadstevendev",
+    "storage_bucket": "downloadstevendev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513836048569:android:332e6c71d66f8af920bb68",
+        "android_client_info": {
+          "package_name": "com.stvdev.amity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513836048569-i3tvesuvrj38s2ime22j1nasg7fj0a6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASK1tpdw3OYN4QYFX0oUf0Jive_b0pWCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513836048569-i3tvesuvrj38s2ime22j1nasg7fj0a6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513836048569:android:491201047deff8b920bb68",
+        "android_client_info": {
+          "package_name": "com.stvdev.calltest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513836048569-i3tvesuvrj38s2ime22j1nasg7fj0a6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASK1tpdw3OYN4QYFX0oUf0Jive_b0pWCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513836048569-i3tvesuvrj38s2ime22j1nasg7fj0a6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

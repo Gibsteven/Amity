@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:background="#001054DE"
+            android:layout_width="55dp"
+            android:layout_height="24dp"
+            android:src="@drawable/more"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pro"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginStart="20dp"
+            app:civ_border_color="@color/colorDesactive"
+            app:civ_border_width="2dp"
+            android:background="#001054DE"
+            android:src="@drawable/images"
+            android:layout_width="61dp"
+            android:layout_height="61dp"/>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_post"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="0 posts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_following"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="0 following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_followers"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="0 followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box_bio"
+        android:orientation="vertical"
+        android:layout_below="@id/pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/background_edit_profil"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/iedit_con"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit profile"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabTextColor="@color/blue"
+        app:tabIndicatorColor="@color/blue"
+        android:layout_below="@id/box_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_below="@id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_above="@id/arrow"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Your feed is empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Start your first post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="80dp"
+            android:layout_width="61dp"
+            android:layout_height="80dp"
+            android:src="@drawable/vector"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
